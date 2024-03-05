@@ -1,27 +1,27 @@
-cv2 does not work on arm64
-first switch to x68
 
-uname -m
-If the CPU architecture is the default, it should return “arm64”.
+Emotion Detection and Image Classification using Supervised Learning
 
-Here is the KEY! Then, change the CPU architecture by putting the following command!
+This Python project aims to detect emotions in images through supervised learning techniques. It utilizes deep learning models for image classification and emotion recognition. By leveraging pre-trained models and custom datasets, this project facilitates understanding and recognition of emotions portrayed in images.
 
-arch -x86_64 zsh
-Next, create a virtual environment on Terminal (iTerm).
+Features:
+Emotion Detection: Detects and classifies emotions such as happiness, sadness, anger, etc., depicted in images.
+Image Classification: Utilizes supervised learning techniques to classify images based on predefined labels.
+Customizable: Easily extendable to incorporate new emotion categories or image classes.
+Pre-trained Models: Utilizes pre-trained deep learning models for efficient and accurate emotion recognition and image classification.
+Sample Data:
+Sample dataset included in this repository consists of images categorized into various emotion classes, such as:
 
+Happy
+Sad
+Angry
+Surprised
+Neutral
+The dataset is organized into separate folders for each emotion class, ensuring ease of use for training and testing purposes.
 
-python3 -m venv cv2-env
-Then, activate the virtual environment.
-
-cd cv2-env
-source bin/activate
-
-cd cv2-env
-source bin/activate
-After everything is set up, install the OpenCV on M1 Mac! You can simply follow the command below, and more detail of the OpenCV using pip is from here.
-
-pip install opencv-python
-
-pip install opencv-python
-Numpy is also installed during installing opencv-python. When you type “pip list” on Terminal, you should be able to see the image like below.
-
+Requirements:
+Python 3.x
+TensorFlow
+Keras
+OpenCV
+Matplotlib
+NumPy
